@@ -125,13 +125,13 @@ void printMultiplicationTable(int num) {
     const int colWidth = 7;
 
     // Grid Column Header
-    std::cout << std::setw(6) << "x |";
+    std::cout << std::setw(4) << "x" << " |";
     for (int c = startCol; c <= endCol; ++c) {
         std::cout << std::setw(colWidth) << c;
     }
     std::cout << '\n';
 
-    std::cout << "------+";
+    std::cout << "-----+";
     for (int c = startCol; c <= endCol; ++c) {
         for (int k = 0; k < colWidth; ++k) {
             std::cout << '-';
@@ -141,7 +141,7 @@ void printMultiplicationTable(int num) {
 
     // Outer loop: Multipliers 1 through 10
     for (int r = 1; r <= 10; ++r) {
-        std::cout << std::setw(4) << r << "  |";
+        std::cout << std::setw(4) << r << " |";
 
         // Inner loop: Columns from startCol to endCol
         for (int c = startCol; c <= endCol; ++c) {
