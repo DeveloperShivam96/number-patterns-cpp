@@ -1,0 +1,13 @@
+# Binaries and executables
+*.exe
+*.o
+*.obj
+*.out
+number_patterns
+
+# IDE and OS files
+.vscode/
+.vs/
+.idea/
+Thumbs.db
+[Dd]esktop.ini
